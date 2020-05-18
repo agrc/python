@@ -1,2 +1,3 @@
-# pylint-config
-AGRC's default pylint configuration
+# agrc/python
+
+AGRC's default Python project configuration/template
