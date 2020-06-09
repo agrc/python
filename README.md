@@ -1,5 +1,8 @@
 # agrc/python
 
+[![Build Status](https://travis-ci.com/agrc/python.svg?branch=master)](https://travis-ci.com/agrc/python)
+[![Coverage Status](https://coveralls.io/repos/github/agrc/python/badge.svg?branch=master)](https://coveralls.io/github/agrc/python?branch=master)
+
 AGRC's default Python project configuration/template
 
 ## Installation
