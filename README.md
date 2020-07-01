@@ -18,7 +18,7 @@ AGRC's default Python project configuration/template
 1. Edit the `test_projectname.py` to match your project name.
    - You will have one `test_filename.py` file for each file in your `src` directory and you will write tests for the specific file in the `test_filename.py` file
 1. Install an editable package for development
-   - `pip install -e ".[tests]`
+   - `pip install -e ".[tests]"`
    - add any project requirements to the `setup.py:install_requires` array
 1. Run the tests
    - `pwt`
