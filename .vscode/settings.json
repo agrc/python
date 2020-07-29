@@ -9,6 +9,7 @@
   "cSpell.words": ["isort", "pylint", "yapf", "pytest", "instafail", "AGRC"],
   "editor.formatOnSave": true,
   "editor.rulers": [120],
+  "files.insertFinalNewline": true,
   "coverage-gutters.showGutterCoverage": true,
   "coverage-gutters.showLineCoverage": true,
   "coverage-gutters.showRulerCoverage": false,
