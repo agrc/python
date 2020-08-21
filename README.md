@@ -21,6 +21,6 @@ AGRC's default Python project configuration/template
    - `pip install -e ".[tests]"`
    - add any project requirements to the `setup.py:install_requires` array
 1. Run the tests
-   - `pwt`
-     - **P**ython **W**atch **T**est will restart the tests every time you save a file
+   - `ptw`
+     - **P**y**t**est **W**atch will restart the tests every time you save a file
 1. Bring your test code coverage to 80% or above!
