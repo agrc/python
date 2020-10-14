@@ -18,5 +18,8 @@
   "coverage-gutters.partialHighlightDark": "rgb(255, 133, 27, .05)",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
-  }
+  },
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true
 }

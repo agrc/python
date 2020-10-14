@@ -21,6 +21,7 @@ AGRC's default Python project configuration/template
    - `pip install -e ".[tests]"`
    - add any project requirements to the `setup.py:install_requires` array
 1. Run the tests
+   - VSCode -> `Python: Run All Tests` or `Python: Debug All Tests`
    - `ptw`
      - **P**y**t**est **W**atch will restart the tests every time you save a file
 1. Bring your test code coverage to 80% or above!
