@@ -1,11 +1,12 @@
 {
   "cSpell.words": [
+    "AGRC",
+    "Codecov",
+    "instafail",
     "isort",
     "pylint",
-    "yapf",
     "pytest",
-    "instafail",
-    "AGRC"
+    "yapf"
   ],
   "coverage-gutters.highlightdark": "rgb(61, 153, 112, .05)",
   "coverage-gutters.noHighlightDark": "rgb(255, 65, 54, .05)",
