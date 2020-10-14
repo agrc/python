@@ -1,7 +1,7 @@
 # agrc/python
 
 ![Build Status](https://github.com/agrc/python/workflows/Build%20and%20Test/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/agrc/python/badge.svg?branch=master)](https://coveralls.io/github/agrc/python?branch=master)
+[![codecov](https://codecov.io/gh/agrc/python/branch/main/graph/badge.svg)](https://codecov.io/gh/agrc/python)
 
 AGRC's default Python project configuration/template
 
@@ -17,6 +17,7 @@ AGRC's default Python project configuration/template
 1. Edit the `setup.py:name, url, project_urls, keywords, and entry_points` to reflect your new project name
 1. Edit the `test_projectname.py` to match your project name.
    - You will have one `test_filename.py` file for each file in your `src` directory and you will write tests for the specific file in the `test_filename.py` file
+1. Navigate to [codecov.io](https://codecov.io/gh/agrc/python) and create a `CODECOV_TOKEN` [project secret](https://github.com/agrc/python/settings/secrets)
 1. Install an editable package for development
    - `pip install -e ".[tests]"`
    - add any project requirements to the `setup.py:install_requires` array
