@@ -37,15 +37,15 @@ setup(
     ],
     extras_require={
         'tests': [
-            'pylint-quotes==0.2.*',
-            'pylint==2.5.*',
-            'pytest-cov==2.9.*',
-            'pytest-instafail==0.4.*',
-            'pytest-isort==1.0.*',
-            'pytest-pylint==0.17.*',
-            'pytest-watch==4.2.*',
-            'pytest==5.4.*',
-            'yapf==0.30.*',
+            'pylint-quotes~=0.2',
+            'pylint~=2.11',
+            'pytest-cov~=3.0',
+            'pytest-instafail~=0.4',
+            'pytest-isort~=2.0',
+            'pytest-pylint~=0.18',
+            'pytest-watch~=4.2',
+            'pytest~=6.0',
+            'yapf~=0.31',
         ]
     },
     setup_requires=[
