@@ -5,7 +5,7 @@ a description of what this module does.
 this file is for testing linting...
 """
 
-import version
+from . import version
 
 TEST = 'test'
 
