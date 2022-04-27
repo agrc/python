@@ -5,6 +5,8 @@ a description of what this module does.
 this file is for testing linting...
 """
 
+import version
+
 TEST = 'test'
 
 
@@ -17,6 +19,8 @@ def hello():
         'this is a really, really, really, really, really, really, really, really, really, really, really, really,'
         'really long line'
     )
+
+    print(f'Version: {version.__version__}')
 
     return 'hi'
 
