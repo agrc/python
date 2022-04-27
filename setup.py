@@ -9,9 +9,14 @@ from os.path import basename, splitext
 
 from setuptools import find_packages, setup
 
+#: Load version from source file
+version = {}
+with open('src/projectname/version.py') as fp:
+    exec(fp.read(), version)
+
 setup(
     name='projectname',
-    version='1.0.0',
+    version=version['__version__'],
     license='MIT',
     description='Project description.',
     author='UGRC',
