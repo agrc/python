@@ -49,7 +49,7 @@ setup(
             'pytest-isort~=2.0',
             'pytest-pylint~=0.18',
             'pytest-watch~=4.2',
-            'pytest~=6.0',
+            'pytest>=6,<8',
             'yapf~=0.31',
         ]
     },
