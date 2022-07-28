@@ -12,17 +12,23 @@ UGRC's default Python project configuration/template
      - `python -m venv .env`
      - activate the environment `source .env/bin/activate`
    - With conda
-     - `conda create --name PROJECT_NAME python=3.7`
+     - `conda create --name PROJECT_NAME python=3.9`
 1. Rename `src/projectname` folder to your desired project name
 1. Edit the `setup.py:name, url, project_urls, keywords, and entry_points` to reflect your new project name
 1. Edit the `test_projectname.py` to match your project name.
    - You will have one `test_filename.py` file for each file in your `src` directory and you will write tests for the specific file in the `test_filename.py` file
-1. Navigate to [codecov.io](https://codecov.io/gh/agrc/python) and create a `CODECOV_TOKEN` [project secret](https://github.com/agrc/python/settings/secrets)
+   - If you are using arcpy, you should mock out the arcpy module in any test that directly imports arcpy or tests any of your code that imports arcpy by adding `import mock_arcpy` to the imports in your test file. This replaces all of arcpy with a Mock object; you can then create custom `return_value`s and `side_effects` for whatever functions you need, and the tests will run appropriately in GitHub Actions (which doesn't have arcpy installed).
+1. Set up Codecov to create coverage reports from GitHub Actions:
+   - Navigate to [codecov.io](https://codecov.io/gh/agrc/python), logging in with your GitHub account if necessary.
+   - Select your new repo and and copy the Upload Token.
+   - Create a new repository secret (github repository Settings -> Secrets -> Actions secrets -> New repository secret) named `CODECOV_TOKEN` and paste the Upload Token as the Value
 1. Install an editable package for development
    - `pip install -e ".[tests]"`
-   - add any project requirements to the `setup.py:install_requires` array
+   - Add any project requirements to the `setup.py:install_requires` array
+   - If you specify `arcgis` version 2.0.0 or greater, uncomment the section in `.github/workflows/ci.yml` so that GitHub Actions installs the necessary dependencies.
 1. Run the tests
    - VSCode -> `Python: Run All Tests` or `Python: Debug All Tests`
    - `ptw`
      - **P**y**t**est **W**atch will restart the tests every time you save a file
 1. Bring your test code coverage to 80% or above!
+1. Replace `python` in the badge links at the top of this page with your new repository name.
