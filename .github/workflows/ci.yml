@@ -9,12 +9,18 @@ jobs:
 
     steps:
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
-        python-version: 3.8
+        python-version: 3.9
+
+    #: Uncomment this if you're using arcgis >= 2.0.0
+    # - name: Install libkrb5 for Kerberos on Linux
+    #   run: |
+    #     sudo apt install -y libkrb5-dev
+    #     pip install requests-kerberos
 
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Install module
       run: pip install .[tests]
@@ -23,7 +29,7 @@ jobs:
       run: pytest
 
     - name: Report coverage to Codecov
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v3
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         file: ./cov.xml
