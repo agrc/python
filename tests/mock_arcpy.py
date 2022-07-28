@@ -6,6 +6,6 @@ modules that import arcpy in turn.
 import sys
 from unittest.mock import Mock
 
-module_name = 'arcpy'
-arcpy = Mock(name=module_name)
-sys.modules[module_name] = arcpy
+MODULE_NAME = 'arcpy'
+arcpy = Mock(name=MODULE_NAME)
+sys.modules[MODULE_NAME] = arcpy
