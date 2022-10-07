@@ -51,6 +51,10 @@ setup(
             'pytest-watch~=4.2',
             'pytest>=6,<8',
             'yapf~=0.31',
+        ],
+        'dev': [
+            'pylint~=2.15',
+            'yapf~=0.32',
         ]
     },
     setup_requires=[
