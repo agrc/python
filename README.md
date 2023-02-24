@@ -32,3 +32,22 @@ UGRC's default Python project configuration/template
      - **P**y**t**est **W**atch will restart the tests every time you save a file
 1. Bring your test code coverage to 80% or above!
 1. Replace `python` in the badge links at the top of this page with your new repository name.
+
+### Publishing to PyPI with GitHub Actions
+
+The `release.yml` GitHub action will publish a [GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) to PyPI. Publishing from GitHub ensures that files in your `.gitignore` file (such as secrets files and other credentials) won't accidentally be uploaded to PyPI because they won't (or at least shouldn't) be in your GitHub repository.
+
+1. Update `src/projectname/version.py` in the sed command in `release.yml` to point to the proper version file in your project structure.
+1. Create a [PyPI API token](https://pypi.org/help/#apitoken) for your project.
+   - Limit its scope to just this one project—you'll create a new token for every individual project
+1. Create a new repository secret (github repository Settings -> Secrets -> Actions secrets -> New repository secret) named `PYPI_API_TOKEN` and paste the token as the value.
+
+This action will be triggered whenever you cut a new release on GitHub:
+
+1. Draft a new release in your GitHub repo.
+1. Choose the appropriate [tag](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/managing-tags) to specify which version/code state should be released
+   a. If you've been adding tags via the desktop client as linked above, or through VSCode, select the appropriate tag.
+   a. If you haven't already added a tag, type in a new version and select "Create a new tag." Select the proper target branch (main, dev, etc) to apply the tag to.
+   a. Version numbers should use PEP 440-compliant [semantic versioning](https://semver.org/) in the form `x.y.z`, where major version `x` increases whenever you make a breaking change, minor version `y` increases whenever you make a substantial but non-breaking change (adding new features, etc), and patch `z` changes whenever you make a small, non-breaking quick fix or change.
+1. Make sure "Set as a pre-release" is left unchecked. Pre-releases will fail to publish.
+1. Publish the release. This will kick off the publish action, and if all goes well your package will be available on PyPI.
