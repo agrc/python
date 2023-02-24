@@ -37,6 +37,8 @@ UGRC's default Python project configuration/template
 
 The `release.yml` GitHub action will publish a [GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) to PyPI. Publishing from GitHub ensures that files in your `.gitignore` file (such as secrets files and other credentials) won't accidentally be uploaded to PyPI because they won't (or at least shouldn't) be in your GitHub repository.
 
+**NOTE:** Make sure your README.md is fit for public consumption. It will be uploaded to PyPI and displayed as your project's main page for the version you upload.
+
 1. Update `src/projectname/version.py` in the sed command in `release.yml` to point to the proper version file in your project structure.
 1. Create a [PyPI API token](https://pypi.org/help/#apitoken) for your project.
    - Limit its scope to just this one project—you'll create a new token for every individual project
