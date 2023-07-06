@@ -20,7 +20,7 @@ setup(
     long_description=(Path(__file__).parent / 'README.md').read_text(),
     long_description_content_type='text/markdown',
     author='UGRC',
-    author_email='ugrc@utah.gov',
+    author_email='ugrc-developers@utah.gov',
     url='https://github.com/agrc/python',
     packages=find_packages('src'),
     package_dir={'': 'src'},
