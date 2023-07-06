@@ -4,6 +4,7 @@
 setup.py
 A module that installs projectname as a module
 """
+
 from pathlib import Path
 
 from setuptools import find_packages, setup
