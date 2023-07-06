@@ -7,24 +7,27 @@ this file is for testing linting...
 
 from . import version
 
-TEST = 'test'
+TEST = "test"
 
 
-def hello():
-    """doc string
+def hello() -> str:
+    """a description of what this function does.
+
+    Returns:
+        str: returns "hi"
     """
-    print('this is good')
+    print("this is good")
 
     print(
-        'this is a really, really, really, really, really, really, really, really, really, really, really, really,'
-        'really long line'
+        "this is a really, really, really, really, really, really, really, really, really, really, really, really,"
+        "really long line"
     )
 
-    print(f'Version: {version.__version__}')
+    print(f"Version: {version.__version__}")
 
-    return 'hi'
+    return "hi"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     #: the code that executes if you run the file or module directly
     GREETING = hello()

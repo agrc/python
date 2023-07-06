@@ -9,4 +9,4 @@ from projectname import main
 
 
 def test_hello_returns_hi():
-    assert main.hello() == 'hi'
+    assert main.hello() == "hi"
