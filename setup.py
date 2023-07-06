@@ -6,6 +6,7 @@ A module that installs projectname as a module
 """
 from glob import glob
 from os.path import basename, splitext
+from pathlib import Path
 
 from setuptools import find_packages, setup
 
