@@ -43,13 +43,13 @@ setup(
     ],
     extras_require={
         "tests": [
-            "pytest-cov==4.*",
+            "pytest-cov>=4,<6",
             "pytest-instafail==0.5.*",
             "pytest-mock==3.*",
             "pytest-ruff==0.*",
             "pytest-watch==4.*",
-            "pytest==7.*",
-            "black>=23.3,<23.10",
+            "pytest>=7,<9",
+            "black>=23.3,<24.4",
             "ruff==0.0.*",
         ],
     },
