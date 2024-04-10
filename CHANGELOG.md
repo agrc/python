@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.1](https://github.com/agrc/python/compare/v1.0.0...v1.0.1) (2024-04-10)
+
+
+### 🌲 Dependencies
+
+* q4 updates ([d518f6f](https://github.com/agrc/python/commit/d518f6f4575021518a85183e103ec97aa8f500ee))
+
+
+### 📖 Documentation Improvements
+
+* update for pro 3.3's python 3.11 ([54530b0](https://github.com/agrc/python/commit/54530b06e6a7474ffe2d6969410da8bbf7937054))
+
 ## 1.0.0 (2023-07-17)
 
 
