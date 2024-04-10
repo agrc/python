@@ -12,7 +12,7 @@ UGRC's default Python project configuration/template
      - `python -m venv .env`
      - activate the environment `source .env/bin/activate`
    - With conda
-     - `conda create --name PROJECT_NAME python=3.9`
+     - `conda create --name PROJECT_NAME python=3.11`
 1. Rename `src/projectname` folder to your desired project name
 1. Edit the `setup.py:name, url, project_urls, keywords, and entry_points` to reflect your new project name
 1. Edit the `pyproject.toml --cov=projectname` to reflect your new project name
