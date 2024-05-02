@@ -30,7 +30,7 @@ jobs:
         run: pip install .[tests]
 
       - name: 🧶 Lint
-        run: ruff check --ouput-format=github .
+        run: ruff check --output-format=github .
 
       - name: 🧪 Run pytest
         run: pytest
