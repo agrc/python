@@ -4,6 +4,7 @@
 setup.py
 A module that installs projectname as a module
 """
+
 from pathlib import Path
 
 from setuptools import find_packages, setup
@@ -48,7 +49,6 @@ setup(
             "pytest-mock==3.*",
             "pytest-watch==4.*",
             "pytest==8.*",
-            "black==24.*",
             "ruff==0.*",
         ],
     },
