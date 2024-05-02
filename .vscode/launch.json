@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "Debug Tests",
-      "type": "python",
-      "request": "test",
+      "type": "debugpy",
+      "request": "launch",
       "console": "integratedTerminal",
       "env": {
         "PYTEST_ADDOPTS": "--no-cov"
