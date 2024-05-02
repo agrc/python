@@ -40,6 +40,6 @@
     "source.organizeImports": "explicit"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
   }
 }
