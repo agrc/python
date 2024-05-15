@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/agrc/python/compare/v1.0.1...v1.0.2) (2024-05-15)
+
+
+### 🐛 Bug Fixes
+
+* ruff param ([e4ef7c2](https://github.com/agrc/python/commit/e4ef7c263623095f49d1c37460e5f17b73fa1be0))
+* run ruff as a separate task ([cdb4ff6](https://github.com/agrc/python/commit/cdb4ff6293e4bd5cf4f9850fe4d9dbe4539c2ca6))
+
 ## [1.0.1](https://github.com/agrc/python/compare/v1.0.0...v1.0.1) (2024-04-10)
 
 
