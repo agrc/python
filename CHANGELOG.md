@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/agrc/python/compare/v1.0.2...v1.0.3) (2025-01-15)
+
+
+### Dependencies
+
+* **dev:** update pytest-cov requirement from ==5.* to &gt;=5,&lt;7 ([#52](https://github.com/agrc/python/issues/52)) ([1d0ebe0](https://github.com/agrc/python/commit/1d0ebe06326674565b83d9c8d8ccabf41b424719))
+
 ## [1.0.2](https://github.com/agrc/python/compare/v1.0.1...v1.0.2) (2024-05-15)
 
 
