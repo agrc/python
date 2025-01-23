@@ -14,9 +14,13 @@
     "oidc",
     "opensgid",
     "pgsql",
+    "pipx",
+    "projectname",
     "psycopg",
     "pygsheets",
     "pyodbc",
+    "pypa",
+    "pypi",
     "pytest",
     "rindex",
     "sgid",
@@ -25,9 +29,7 @@
     "worknote"
   ],
   "editor.formatOnSave": true,
-  "editor.rulers": [
-    120
-  ],
+  "editor.rulers": [120],
   "coverage-gutters.showGutterCoverage": false,
   "coverage-gutters.showLineCoverage": true,
   "coverage-gutters.showRulerCoverage": false,
@@ -40,6 +42,6 @@
     "source.organizeImports": "explicit"
   },
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.defaultFormatter": "charliermarsh.ruff"
   }
 }
