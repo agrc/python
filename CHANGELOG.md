@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/agrc/python/compare/v1.0.3...v1.0.4) (2025-07-30)
+
+
+### Documentation
+
+* fix example dependency declaration syntax ([f59f925](https://github.com/agrc/python/commit/f59f925dd955828b56e5b3650271cd83c69d5144))
+
 ## [1.0.3](https://github.com/agrc/python/compare/v1.0.2...v1.0.3) (2025-01-23)
 
 
